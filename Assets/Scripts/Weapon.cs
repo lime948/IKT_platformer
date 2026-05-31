@@ -10,9 +10,9 @@ public class Weapon : MonoBehaviour
 	public bool isShooting;
 	public bool readyToShoot;
 	bool allowReset = true;
-	public static float rpmlimiter = 0.1f;
-	public float shootingCooldown = rpmlimiter;
-	public float burstCoolDown = 0.5f;
+    public float shootingCooldown = 0f;
+    public float fireRate = 600f;
+    public float burstCoolDown = 0.5f;
 	public float burstDelay = 0.05f;
 	
 	// Burst
@@ -87,11 +87,11 @@ public class Weapon : MonoBehaviour
 			{
 				shootingCooldown = burstCoolDown;
 			}
-			else
-			{
-				shootingCooldown = rpmlimiter;
-			}
-			Invoke("ResetShot", shootingCooldown);
+            else
+            {
+                shootingCooldown = 60 / fireRate;
+            }
+            Invoke("ResetShot", shootingCooldown);
 			allowReset = false;
 		}
 		

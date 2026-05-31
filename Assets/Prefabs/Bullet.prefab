@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 5446663009623465111}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4286, y: 1.9504, z: 0.8833}
+  m_LocalPosition: {x: 0.4064674, y: 1.9114496, z: 0.8833}
   m_LocalScale: {x: 0.005, y: 0.003, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -170,7 +170,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cc188d71183e9f64e921c7559252aae4, type: 2}
+  - {fileID: 2100000, guid: eb5d063e07769824082df8fd48c9d9fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -275,4 +275,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1922be9968e1c3540bebbc2c28aa0912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
-  damage: 17
+  damage: 20
