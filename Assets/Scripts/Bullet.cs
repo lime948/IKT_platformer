@@ -6,14 +6,22 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Target target = collision.gameObject.GetComponent<Target>();
+		Target target = collision.gameObject.GetComponent<Target>();
+		if (target != null)
+		{
+			target.TakeDamage(damage);
+			Destroy(gameObject);
+			return;
+		}
 
-        if (target != null)
-        {
-            target.TakeDamage(damage);
-            Destroy(gameObject);
-        }
+		PlayerHealth player = collision.gameObject.GetComponent<PlayerHealth>();
+		if (player != null)
+		{
+			player.TakeDamage(damage);
+			Destroy(gameObject);
+			return;
+		}
 
-        // Destroy(gameObject);
+		// Destroy(gameObject); // hit a wall or something else
     }
 }
