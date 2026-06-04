@@ -817,6 +817,24 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08a48f3e5cc10a14e888b49b5d0e96a5, type: 3}
+--- !u!1 &445464344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1326644391534098106, guid: 42a063ba69f581e4a86b16240bb59f1e, type: 3}
+  m_PrefabInstance: {fileID: 1854698575}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &445464349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445464344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61a9d72deaa64d40b97345b5b4f8d90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneTransition
+  sceneToLoad: Lvl2
 --- !u!1001 &566403330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3771,10 +3789,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform_Teal_Floating (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4710861148147994792, guid: 42a063ba69f581e4a86b16240bb59f1e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1326644391534098106, guid: 42a063ba69f581e4a86b16240bb59f1e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 445464349}
   m_SourcePrefab: {fileID: 100100000, guid: 42a063ba69f581e4a86b16240bb59f1e, type: 3}
 --- !u!1001 &1881130965
 PrefabInstance:
